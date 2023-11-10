@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From ghwan711</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        img {
+            max-width: 100%;
+            max-height: 600px;
+        }
+    </style>
+</head>
+<body>
+
+<h1><font color="purple">3학년을 마무리 중인 여러분에게</font></h1>
+
+<button id="button1" onclick="showImage('https://i.postimg.cc/Wz0cJvTg/sc.png')"><b>To 천우영</b></button>
+<button id="button2" onclick="showImage('https://i.postimg.cc/SKthBdg2/s1.png')">Short msg...</button>
+
+<div id="imageContainer"></div>
+
+<script>
+    function showImage(imageUrl) {
+        var imageContainer = document.getElementById('imageContainer');
+        imageContainer.innerHTML = ''; // Clear previous image
+
+        var image = document.createElement('img');
+        image.src = imageUrl;
+        image.alt = 'Web Image';
+
+        imageContainer.appendChild(image);
+    }
+</script>
+<font color=white>python으로 어케어케 하고 exe로 변환 어쩌구 시도했다가 종합실패하여 여기로....</font>
+
+</body>
+</html>
